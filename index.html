@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#dceefa">
+  <meta name="description" content="A little digital memory book, made with love by cassang.">
+  <title>for you, mahal — a little memory book</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="ambient" aria-hidden="true">
+    <span class="orb orb-one"></span><span class="orb orb-two"></span>
+    <div class="particle-field" id="particleField"></div>
+  </div>
+
+  <main id="siteMain">
+    <section class="screen intro-screen is-active" id="screen-intro" aria-labelledby="introTitle">
+      <div class="intro-content">
+        <p class="eyebrow">a little something, just for you</p>
+        <div class="envelope-wrap" aria-hidden="true">
+          <div class="envelope-glow"></div>
+          <div class="envelope">
+            <div class="envelope-back"></div>
+            <div class="letter-peek"><span>for mahal</span><i>♡</i></div>
+            <div class="envelope-front"></div>
+            <div class="envelope-flap"></div>
+            <div class="envelope-seal">c</div>
+          </div>
+          <span class="float-heart heart-a">♡</span><span class="float-heart heart-b">✧</span>
+        </div>
+        <h1 id="introTitle">for you, <em>mahal.</em></h1>
+        <p class="intro-subtitle">some memories deserve a place to stay,<br class="desktop-break"> even when things change.</p>
+        <button class="primary-button" data-go="letter">open this little memory <span aria-hidden="true">↗</span></button>
+        <p class="signature small-signature">by cassang</p>
+      </div>
+      <span class="edge-note">a memory book · 01 / 05</span>
+    </section>
+
+    <section class="screen content-screen" id="screen-letter" aria-labelledby="letterTitle" aria-hidden="true">
+      <div class="section-shell letter-shell">
+        <p class="eyebrow">a letter i kept close</p>
+        <h2 id="letterTitle">there are things i never got to say<span class="blue-period">...</span></h2>
+        <article class="letter-card reveal">
+          <div class="paper-grain" aria-hidden="true"></div>
+          <div class="letter-topline"><span>to: mahal</span><span class="letter-stamp">♡</span></div>
+          <div class="letter-copy" id="letterCopy">
+            <p>Dear Mahal,</p>
+            <p>Honestly, I don’t even know how to start this because saying goodbye to you is harder than I thought. I keep trying to find the right words, but none of them feel enough. So I’ll just say what I can, even if it hurts a little.</p>
+            <p>I know things won’t always stay the same, and maybe this is really where we have to let go. But please don’t think that what we had was just nothing to me. I cared about you, more than I probably showed sometimes. I’ll miss the random talks, the little updates, the laughs, and even the simplest moments that I didn’t know I would end up missing this much.</p>
+            <p>I wish things could have stayed a little longer, but I also know I can’t keep holding on to something that’s meant to change. I hope life treats you well, Mahal. I hope you reach the things you’ve been wishing for, meet people who make you happy, and never lose the good parts of yourself. Even if I’m no longer there to see it, I’ll still be wishing you the best.</p>
+            <p>please take care of yourself, okay?</p>
+          </div>
+          <p class="signature letter-signature">by cassang</p>
+          <div class="letter-bottomline"><span>with care, always</span><span>♡</span></div>
+        </article>
+        <button class="primary-button" data-go="gallery">keep these memories <span aria-hidden="true">→</span></button>
+      </div>
+      <span class="edge-note">the words i couldn't say · 02 / 05</span>
+    </section>
+
+    <section class="screen content-screen" id="screen-gallery" aria-labelledby="galleryTitle" aria-hidden="true">
+      <div class="section-shell">
+        <p class="eyebrow">little pieces of us</p>
+        <h2 id="galleryTitle">little moments, big memories<span class="blue-period">.</span></h2>
+        <p class="section-subtitle">i wish i could keep every version of these moments.</p>
+        <div class="gallery-grid">
+          <button class="photo-card reveal" data-photo="0" aria-label="Open photo 1: i wish i could go back to this day, even just for a little while.">
+            <span class="photo-frame"><img src="images/photo1.jpg" alt="Memory photograph one" loading="lazy"><span class="photo-fallback">a little moment<br><small>photo 01</small></span><span class="photo-zoom">view memory ↗</span></span>
+            <span class="photo-caption">i wish i could go back to this day, even just for a little while.</span>
+          </button>
+          <button class="photo-card reveal" data-photo="1" aria-label="Open photo 2: we probably didn’t know these little moments would mean this much someday.">
+            <span class="photo-frame"><img src="images/photo2.jpg" alt="Memory photograph two" loading="lazy"><span class="photo-fallback">a little moment<br><small>photo 02</small></span><span class="photo-zoom">view memory ↗</span></span>
+            <span class="photo-caption">we probably didn’t know these little moments would mean this much someday.</span>
+          </button>
+          <button class="photo-card reveal" data-photo="2" aria-label="Open photo 3: if only memories could keep people a little closer.">
+            <span class="photo-frame"><img src="images/photo3.jpg" alt="Memory photograph three" loading="lazy"><span class="photo-fallback">a little moment<br><small>photo 03</small></span><span class="photo-zoom">view memory ↗</span></span>
+            <span class="photo-caption">if only memories could keep people a little closer.</span>
+          </button>
+        </div>
+        <p class="gallery-note">just a few photos, but so many things i wish i could say about them.</p>
+        <button class="primary-button" data-go="memories">keep going <span aria-hidden="true">→</span></button>
+      </div>
+      <span class="edge-note">moments worth keeping · 03 / 05</span>
+    </section>
+
+    <section class="screen content-screen" id="screen-memories" aria-labelledby="memoriesTitle" aria-hidden="true">
+      <div class="section-shell memories-shell">
+        <p class="eyebrow">the little things stay</p>
+        <h2 id="memoriesTitle">things i’ll quietly remember<span class="blue-period">.</span></h2>
+        <div class="memory-grid">
+          <article class="memory-card reveal card-one"><span class="memory-icon">✧</span><span class="memory-number">01</span><p>Those random conversations, our silly moments, and the days that felt normal back then but mean so much to me now.</p><span class="card-scribble">the everyday things</span></article>
+          <article class="memory-card reveal card-two"><span class="memory-icon">♡</span><span class="memory-number">02</span><p>For the time you gave, the effort you made, and for making some days feel lighter without even trying.</p><span class="card-scribble">thank you</span></article>
+          <article class="memory-card reveal card-three"><span class="memory-icon">☾</span><span class="memory-number">03</span><p>Some of my favorite memories aren’t even in these pictures. They’re the small things I still remember without trying.</p><span class="card-scribble">still remember</span></article>
+          <article class="memory-card reveal card-four"><span class="memory-icon">☆</span><span class="memory-number">04</span><p>I wish I had said more while I still had the chance. I hope you knew how much you meant to me.</p><span class="card-scribble">if only i had</span></article>
+        </div>
+        <button class="primary-button" data-go="goodbye">one last thing <span aria-hidden="true">→</span></button>
+      </div>
+      <span class="edge-note">the things that stay · 04 / 05</span>
+    </section>
+
+    <section class="screen goodbye-screen" id="screen-goodbye" aria-labelledby="goodbyeTitle" aria-hidden="true">
+      <div class="goodbye-content">
+        <p class="eyebrow">and now, gently</p>
+        <div class="final-star" aria-hidden="true">♡</div>
+        <h2 id="goodbyeTitle">before you go<span class="blue-period">...</span></h2>
+        <div class="final-letter reveal">
+          <p>I guess this is where I say goodbye, even if a part of me still wishes I didn’t have to.</p>
+          <p>I don’t know if you’ll ever look back at these moments the way I do, but I hope you know they were real to me. I’m going to miss you, Mahal. Not just the big things, but the random little stuff too. The conversations, the jokes, the updates, and simply knowing you were there.</p>
+          <p>I wanted more time, honestly. More memories, more chances, and maybe a different ending. But not everything we want is something we get to keep. And as much as it hurts, I’m learning to accept that.</p>
+          <p>So this is me letting go, not because you didn’t matter, but because you did. Thank you for being part of my life. I hope you find the happiness you deserve. Please take care, always. I’ll remember you with love, even from a distance.</p>
+        </div>
+        <p class="final-wish">i hope life is kind to you, even on the days i can’t be there.</p>
+        <p class="signature final-signature">by cassang</p>
+        <button class="primary-button keepsake-button" id="keepsakeButton">keep this memory <span aria-hidden="true">♡</span></button>
+        <p class="keepsake-message" id="keepsakeMessage" role="status" aria-live="polite" hidden>some people leave, but the memories don’t really go with them.</p>
+        <button class="text-button" id="restartButton">read it again, whenever you need</button>
+      </div>
+      <span class="edge-note">with love, from a distance · 05 / 05</span>
+    </section>
+  </main>
+
+  <nav class="music-player" aria-label="Background music player">
+    <button class="music-toggle" id="musicToggle" type="button" aria-label="Play background music" aria-pressed="false">
+      <span class="music-symbol" aria-hidden="true">♫</span>
+      <span class="music-state" id="musicState">play a little music</span>
+    </button>
+    <label class="volume-control" for="volumeControl"><span aria-hidden="true">♪</span><input id="volumeControl" type="range" min="0" max="1" step="0.05" value="0.65" aria-label="Music volume"></label>
+    <audio id="backgroundMusic" src="music/song.mp3" preload="none" loop></audio>
+  </nav>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo memory viewer" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close photo viewer">×</button>
+    <button class="lightbox-arrow lightbox-prev" id="lightboxPrev" aria-label="Previous photo">‹</button>
+    <figure class="lightbox-figure">
+      <img id="lightboxImage" src="" alt="">
+      <div class="lightbox-image-fallback" id="lightboxFallback" hidden>this memory is waiting for its photo</div>
+      <figcaption id="lightboxCaption"></figcaption>
+    </figure>
+    <button class="lightbox-arrow lightbox-next" id="lightboxNext" aria-label="Next photo">›</button>
+    <p class="lightbox-counter" id="lightboxCounter">01 / 03</p>
+  </div>
+  <div class="screen-reader-only" id="screenAnnouncement" aria-live="polite"></div>
+</body>
+</html>
